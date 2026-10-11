@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Something for You ♥</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Screen 1: The Valentine's question -->
+    <main>
+        <section id="welcomeScreen" class="welcome-screen">
+            <h1>Will you be my Valentine?</h1>
+
+            <div class="button-container">
+                <button id="yesButton" type="button">Yes</button>
+                <button id="noButton" type="button">No</button>
+            </div>
+        </section>
+
+        <!-- Screen 2: The secret terminal -->
+        <section id="terminalScreen" class="terminal-screen hidden">
+            <div class="terminal-window">
+                <header class="terminal-header">
+                    <span class="terminal-title">A message for you</span>
+                </header>
+
+                <div id="terminalOutput" class="terminal-output">
+                    <p>Initializing something special...</p>
+                    <p>Connection established ♥</p>
+                    <p>Welcome, my favorite person.</p>
+                    <p>Type <strong>help</strong> to discover the secrets.</p>
+                </div>
+
+                <form id="terminalForm" class="terminal-form">
+                    <label for="terminalInput">you@my-heart:~$</label>
+                    <input
+                        type="text"
+                        id="terminalInput"
+                        name="command"
+                        placeholder="Type a command..."
+                        autocomplete="off"
+                        spellcheck="false"
+                    >
+                    <button type="submit">Enter</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
